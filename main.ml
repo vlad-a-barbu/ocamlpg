@@ -180,8 +180,10 @@ let print_results queries results =
             (show_result r))
   in print_results' queries results ""
 
-(* can we enforce that len l1 = len l2 at type level *)
-
+(*
+  can we enforce that len l1 = len l2 at type level ?
+  prevent compiler warning - "pattern-matching is not exhaustive"
+ *)
 let f g l1 l2 =
   let rec f' g l1 l2 acc =
     match (l1, l2) with
