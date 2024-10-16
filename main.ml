@@ -180,24 +180,6 @@ let print_results queries results =
             (show_result r))
   in print_results' queries results ""
 
-(*
-  can we enforce that len l1 = len l2 at type level ?
-  prevent compiler warning - "pattern-matching is not exhaustive"
- *)
-let f g l1 l2 =
-  let rec f' g l1 l2 acc =
-    match (l1, l2) with
-    | [], [] -> acc
-    | x :: xs, y :: ys -> f' g xs ys ( (g x y) :: acc )
-  in reverse @@ f' g l1 l2 []
-
-let f2 g l1 l2 =
-  let rec f' g l1 l2 acc =
-    match (l1, l2) with
-    | [], [] | _, [] | [], _ -> acc
-    | x :: xs, y :: ys -> f' g xs ys ( (g x y) :: acc )
-  in reverse @@ f' g l1 l2 []
-
 let () =
   print_string @@ print_results queries (query_multiple facts queries)
 
