@@ -1,0 +1,138 @@
+{
+  "nullTest": null,
+  "booleanTests": {
+    "trueValue": true,
+    "falseValue": false
+  },
+  "numberTests": {
+    "integers": {
+      "zero": 0,
+      "positive": 42,
+      "negative": -17,
+      "large": 999999
+    },
+    "floats": {
+      "simple": 3.14,
+      "negative": -0.001,
+      "zero": 0.0,
+      "longDecimal": 123.456789
+    }
+  },
+  "stringTests": {
+    "empty": "",
+    "simple": "Hello, World!",
+    "numbers": "12345",
+    "symbols": "!@#$%^&*()",
+    "spaces": "   padded   string   ",
+    "unicode": "Hello, 世界"
+  },
+  "arrayTests": {
+    "empty": [],
+    "numbers": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "mixed": [
+      null,
+      true,
+      42,
+      "string",
+      3.14
+    ],
+    "nested": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ]
+    ]
+  },
+  "objectTests": {
+    "empty": {},
+    "nested": {
+      "level1": {
+        "level2": {
+          "level3": "deep nesting"
+        }
+      }
+    },
+    "mixed": {
+      "null": null,
+      "boolean": true,
+      "number": 42,
+      "string": "value",
+      "array": [
+        1,
+        2,
+        3
+      ],
+      "object": {
+        "key": "value"
+      }
+    }
+  },
+  "complexStructure": {
+    "users": [
+      {
+        "id": 1,
+        "name": "Alice",
+        "active": true,
+        "scores": [
+          95.5,
+          88.0,
+          92.3
+        ],
+        "preferences": {
+          "theme": "dark",
+          "notifications": true,
+          "language": "en"
+        }
+      },
+      {
+        "id": 2,
+        "name": "Bob",
+        "active": false,
+        "scores": [
+          78.5,
+          89.2,
+          91.0
+        ],
+        "preferences": {
+          "theme": "light",
+          "notifications": false,
+          "language": "fr"
+        }
+      }
+    ],
+    "metadata": {
+      "version": "1.0",
+      "generated": "2024-01-01",
+      "stats": {
+        "totalUsers": 2,
+        "activeUsers": 1,
+        "averageScore": 89.08
+      }
+    }
+  },
+  "whitespaceTests": {
+    "array": [
+      1,
+      2,
+      3
+    ],
+    "nested": {
+      "key1": "value1",
+      "key2": "value2"
+    }
+  }
+}
