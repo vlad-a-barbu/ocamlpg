@@ -1,0 +1,32 @@
+type 'a node =
+  | One of 'a
+  | Many of 'a node list
+
+let reverse list =
+  let rec reverse' list acc =
+    match list with
+    | [] -> acc
+    | h :: tail -> reverse' tail (h :: acc)
+  in reverse' list []
+
+let flatten list =
+  let rec flatten' list acc =
+    match list with
+    | [] -> acc
+    | One x :: rest -> flatten' rest (x :: acc)
+    | Many xs :: rest -> flatten' rest (flatten' xs acc)
+  in reverse (flatten' list [])
+
+let compress list =
+  let rec contains x = function
+    | [] -> false
+    | h :: tail -> if x = h
+                   then true
+                   else contains x tail 
+  in
+  let rec compress' acc = function
+    | [] -> acc
+    | h :: tail -> if contains h acc
+                   then compress' acc tail
+                   else compress' (h :: acc) tail
+  in reverse (compress' [] list)
