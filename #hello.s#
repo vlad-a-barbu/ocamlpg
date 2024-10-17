@@ -1,0 +1,95 @@
+	.file ""
+	.section .rdata,"dr"
+	.align	16
+caml_negf_mask:
+	.quad	0x8000000000000000
+	.quad	0
+	.align	16
+caml_absf_mask:
+	.quad	0x7fffffffffffffff
+	.quad	-1
+	.data
+	.globl	camlHello.data_begin
+camlHello.data_begin:
+	.text
+	.globl	camlHello.code_begin
+camlHello.code_begin:
+	.data
+	.align	8
+	.data
+	.align	8
+	.quad	768
+	.globl	camlHello
+camlHello:
+	.data
+	.align	8
+	.globl	camlHello.gc_roots
+camlHello.gc_roots:
+	.quad	camlHello
+	.quad	0
+	.data
+	.align	8
+	.quad	2044
+camlHello.1:
+	.ascii	"Hello"
+	.space	2
+	.byte	2
+	.text
+	.align	16
+	.globl	camlHello.entry
+camlHello.entry:
+	leaq	-320(%rsp), %r10
+	cmpq	40(%r14), %r10
+	jb	.L101
+.L102:
+.L100:
+	movabsq	$camlHello.1, %rax
+	call	*__caml_imp_camlStdlib.print_endline_369(%rip)
+.L103:
+	movl	$1, %eax
+	ret
+.L101:
+	push	$33
+	call	*__caml_imp_caml_call_realloc_stack(%rip)
+	popq	%r10
+	jmp	.L102
+	.data
+	.align	8
+	.text
+	.globl	camlHello.code_end
+camlHello.code_end:
+	.data
+				/* relocation table start */
+	.align	8
+__caml_imp_camlStdlib.print_endline_369:
+	.quad	camlStdlib.print_endline_369
+__caml_imp_caml_call_realloc_stack:
+	.quad	caml_call_realloc_stack
+				/* relocation table end */
+	.data
+	.quad	0
+	.globl	camlHello.data_end
+camlHello.data_end:
+	.quad	0
+	.align	8
+	.globl	camlHello.frametable
+camlHello.frametable:
+	.quad	1
+	.quad	.L103
+	.word	9
+	.word	0
+	.align	4
+	.long	(.L104 - .) + 0
+	.align	8
+	.align	4
+.L104:
+	.long	(.L106 - .) + 0
+	.long	533744
+.L105:
+	.ascii	"hello.ml\0"
+	.align	4
+.L106:
+	.long	(.L105 - .) + 0
+	.ascii	"Hello\0"
+	.align	8
+ 
