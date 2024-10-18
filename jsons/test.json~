@@ -1,0 +1,36 @@
+{
+    "items": [
+        {
+            "cartKey": "20142_100030_V123100M36171_1000055887",
+            "basketItemSourceId": "ae2fef03-17d1-47dc-bfca-25ffc2f8bdc7",
+            "quantity": 1,
+            "articleId": "1000055887",
+            "partNo": "OC 90",
+            "description": "Ölfilter",
+            "addedTime": "2024-10-18T13:33:20.856",
+            "multipleQuantity": 1,
+            "priceWoVat": 1304.16,
+            "priceWiVat": 1578.0336,
+            "amountWoVat": 1304.16,
+            "availability": [
+                {
+                    "quantity": 1,
+                    "availState": 1,
+                    "arrivalTime": "2024-10-18T13:10:00",
+                    "externalSource": false
+                }
+            ],
+            "stock": {
+                "articleId": "1000055887",
+                "stock": 388,
+                "branchId": "311"
+            },
+            "totalAxStock": 406,
+            "brand": "MAHLE",
+            "vehicleInfo": "AUDI A5 (F53, F5P) 2.0 TFSI test  ",
+            "vehicleId": "V123100M36171",
+            "vehicleVin": "123456789",
+            "attachedCartItems": []
+        }
+    ]
+}
