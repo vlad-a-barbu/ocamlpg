@@ -163,4 +163,5 @@ let read_file path =
 let parse_json path = json_of_string @@ read_file path;;
 
 (* parse_json "test.json" *)
+(* parse_json "test2.json" *)
 

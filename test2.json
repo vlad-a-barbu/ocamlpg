@@ -1,0 +1,78 @@
+{
+  "database": {
+    "servers": [
+      {
+        "id": 1,
+        "host": "10.0.0.1",
+        "ports": [
+          8080,
+          8081,
+          8082
+        ],
+        "settings": {
+          "maxConnections": 1000,
+          "timeout": 30.5,
+          "enabled": true,
+          "backupServers": null
+        },
+        "tags": [
+          "primary",
+          "production"
+        ],
+        "metrics": {
+          "requestsPerSecond": 1234,
+          "errorRate": 0.01,
+          "responseTime": {
+            "min": 0.1,
+            "max": 1.5,
+            "avg": 0.3
+          }
+        }
+      },
+      {
+        "id": 2,
+        "host": "10.0.0.2",
+        "ports": [
+          9090,
+          9091
+        ],
+        "settings": {
+          "maxConnections": 500,
+          "timeout": 15.0,
+          "enabled": false,
+          "backupServers": [
+            "backup1",
+            "backup2"
+          ]
+        },
+        "tags": [
+          "secondary",
+          "staging"
+        ],
+        "metrics": {
+          "requestsPerSecond": 567,
+          "errorRate": 0.02,
+          "responseTime": {
+            "min": 0.2,
+            "max": 2.0,
+            "avg": 0.5
+          }
+        }
+      }
+    ],
+    "version": "2.1",
+    "lastUpdate": "2024-01-15",
+    "config": {
+      "replicationEnabled": true,
+      "monitoring": {
+        "interval": 60,
+        "alertThresholds": {
+          "cpu": 90,
+          "memory": 85,
+          "disk": 95
+        }
+      }
+    }
+  }
+}
+
