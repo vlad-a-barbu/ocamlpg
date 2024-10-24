@@ -1,71 +1,71 @@
 {
-    "emptyStructures": {
-	"emptyObject": {},
-	"emptyArray": [],
-	"nestedEmpty": {
-	    "empty": {},
-	    "arrayWithEmpty": [
-		{},
-		[],
-		{}
-	    ]
-	}
-    },
-    "numberEdgeCases": {
-	"zero": 0,
-	"negativeZero": 0,
-	"maxInt": 2147483647,
-	"minInt": -2147483648,
-	"longDecimals": 123.456789,
-	"negativeFloat": -1e-06
-    },
-    "whitespaceTests": {
-	"key1": "value1",
-	"key2": "value2",
-	"key3": "value3"
-    },
-    "deeplyNested": [
-	[
-	    [
-		[
-		    [
-			[
-			    [
-				[
-				    [
-					[
-					    {
-						"deep": "structure"
-					    }
-					]
-				    ]
-				]
-			    ]
-			]
-		    ]
-		]
-	    ]
-	]
-    ],
-    "mixedArray": [
-	0,
-	false,
-	null,
-	"",
-	{},
-	[],
-	{
-	    "key": [
-		null,
-		1,
-		"",
-		false,
-		[],
-		{}
-	    ]
-	}
-    ],
-    "unicode": "Hello, 世界, Здравствуйте, مرحبا",
-    "longString": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
-    "spacedString": "   mixed   spacing   content   "
+  "emptyStructures": {
+    "emptyObject": {},
+    "emptyArray": [],
+    "nestedEmpty": {
+      "empty": {},
+      "arrayWithEmpty": [
+        {},
+        [],
+        {}
+      ]
+    }
+  },
+  "numberEdgeCases": {
+    "zero": 0,
+    "negativeZero": 0,
+    "maxInt": 2147483647,
+    "minInt": -2147483648,
+    "longDecimals": 123.456789,
+    "negativeFloat": -1.06
+  },
+  "whitespaceTests": {
+    "key1": "value1",
+    "key2": "value2",
+    "key3": "value3"
+  },
+  "deeplyNested": [
+    [
+      [
+        [
+          [
+            [
+              [
+                [
+                  [
+                    [
+                      {
+                        "deep": "structure"
+                      }
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ],
+  "mixedArray": [
+    0,
+    false,
+    null,
+    "",
+    {},
+    [],
+    {
+      "key": [
+        null,
+        1,
+        "",
+        false,
+        [],
+        {}
+      ]
+    }
+  ],
+  "unicode": "Hello, 世界, Здравствуйте, مرحبا",
+  "longString": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+  "spacedString": "   mixed   spacing   content   "
 }
