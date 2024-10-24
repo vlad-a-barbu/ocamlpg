@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/dpg/META"
+  "_build/install/default/lib/dpg/dune-package"
+  "_build/install/default/lib/dpg/opam"
+]
+bin: [
+  "_build/install/default/bin/dpg"
+]

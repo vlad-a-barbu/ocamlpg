@@ -1,0 +1,4 @@
+(executable
+ (public_name dpg)
+ (name main)
+ (libraries unix dpg))
