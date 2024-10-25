@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/networkp/META"
+  "_build/install/default/lib/networkp/dune-package"
+  "_build/install/default/lib/networkp/opam"
+]
+bin: [
+  "_build/install/default/bin/networkp"
+]
