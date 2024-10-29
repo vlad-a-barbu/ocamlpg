@@ -1,4 +1,4 @@
-# dune exec networkp
+# dune exec networkp -w
 # OCAMLPARAM: unset
 # Shared cache: disabled
 # Shared cache location: /Users/vb/.cache/dune/db
@@ -13,4 +13,19 @@
 #  ; build_dir = In_build_dir "default"
 #  ; instrument_with = []
 #  }
-$ /Users/vb/.opam/default/bin/ocamlc.opt -config > /var/folders/bx/wg7s03wj219f75snyk2nsrk80000gn/T/dune_bf4046_output
+$ /Users/vb/.opam/default/bin/ocamlc.opt -config > /var/folders/bx/wg7s03wj219f75snyk2nsrk80000gn/T/dune_402d13_output
+$ (cd _build/default && /Users/vb/.opam/default/bin/ocamldep.opt -modules -impl lib/server.ml) > _build/default/lib/.networkp.objs/networkp__Server.impl.d
+$ (cd _build/default && /Users/vb/.opam/default/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/.networkp.objs/byte -I /Users/vb/.opam/default/lib/ocaml/unix -no-alias-deps -opaque -open Networkp -o lib/.networkp.objs/byte/networkp__Server.cmo -c -impl lib/server.ml)
+$ (cd _build/default && /Users/vb/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.networkp.objs/byte -I lib/.networkp.objs/native -I /Users/vb/.opam/default/lib/ocaml/unix -intf-suffix .ml -no-alias-deps -opaque -open Networkp -o lib/.networkp.objs/native/networkp__Server.cmx -c -impl lib/server.ml)
+$ (cd _build/default && /Users/vb/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/networkp.cmxa lib/.networkp.objs/native/networkp.cmx lib/.networkp.objs/native/networkp__Server.cmx)
+$ (cd _build/default && /Users/vb/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe /Users/vb/.opam/default/lib/ocaml/unix/unix.cmxa lib/networkp.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
+$ (cd _build/default && /Users/vb/.opam/default/bin/ocamldep.opt -modules -impl lib/server.ml) > _build/default/lib/.networkp.objs/networkp__Server.impl.d
+$ (cd _build/default && /Users/vb/.opam/default/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/.networkp.objs/byte -I /Users/vb/.opam/default/lib/ocaml/unix -no-alias-deps -opaque -open Networkp -o lib/.networkp.objs/byte/networkp__Server.cmo -c -impl lib/server.ml)
+$ (cd _build/default && /Users/vb/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.networkp.objs/byte -I lib/.networkp.objs/native -I /Users/vb/.opam/default/lib/ocaml/unix -intf-suffix .ml -no-alias-deps -opaque -open Networkp -o lib/.networkp.objs/native/networkp__Server.cmx -c -impl lib/server.ml)
+$ (cd _build/default && /Users/vb/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/networkp.cmxa lib/.networkp.objs/native/networkp.cmx lib/.networkp.objs/native/networkp__Server.cmx)
+$ (cd _build/default && /Users/vb/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe /Users/vb/.opam/default/lib/ocaml/unix/unix.cmxa lib/networkp.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
+$ (cd _build/default && /Users/vb/.opam/default/bin/ocamldep.opt -modules -impl lib/server.ml) > _build/default/lib/.networkp.objs/networkp__Server.impl.d
+$ (cd _build/default && /Users/vb/.opam/default/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/.networkp.objs/byte -I /Users/vb/.opam/default/lib/ocaml/unix -no-alias-deps -opaque -open Networkp -o lib/.networkp.objs/byte/networkp__Server.cmo -c -impl lib/server.ml)
+$ (cd _build/default && /Users/vb/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.networkp.objs/byte -I lib/.networkp.objs/native -I /Users/vb/.opam/default/lib/ocaml/unix -intf-suffix .ml -no-alias-deps -opaque -open Networkp -o lib/.networkp.objs/native/networkp__Server.cmx -c -impl lib/server.ml)
+$ (cd _build/default && /Users/vb/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/networkp.cmxa lib/.networkp.objs/native/networkp.cmx lib/.networkp.objs/native/networkp__Server.cmx)
+$ (cd _build/default && /Users/vb/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe /Users/vb/.opam/default/lib/ocaml/unix/unix.cmxa lib/networkp.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)

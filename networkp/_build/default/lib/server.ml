@@ -45,6 +45,8 @@ let serve_ipv4 server =
     let msg = "works\n" in
     Printf.fprintf cout "%s" msg;
     flush cout;
+    Printf.fprintf cout "%s" msg;
+    flush cout;
     close client_socket_fd
   in
   let rec accept_loop () =
